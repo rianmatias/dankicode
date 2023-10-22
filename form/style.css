@@ -1,13 +1,36 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: #000000;
+.wraper {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.form > img {
-    width: 100px;
+.wraper .img {
+    width: 33.3%;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+    .wraper .img {
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .wraper .img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .wraper .img {
+        width: 100%;
+    }
 }
